@@ -1,0 +1,119 @@
+" vim: set ft=vim:
+let g:colors_name = 'aiko'
+set background=dark
+
+hi clear
+
+if exists('syntax_on')
+  syntax reset
+endif
+
+if has('gui_running') || &t_Co == 256
+" 補完ポップアップ
+group Pmenu gfg=#FFFFFF gbg=#606060
+group PmenuSel gfg=#101010 gbg=#EEEEEE
+group Visual gbg=#444444
+group Cursor gbg=#B0D0F0
+
+" 行番号
+group LineNr gfg=#605958
+
+" 通常テキスト
+group Normal gfg=#EEEEEE
+
+group Constant gfg=#CF6A4C
+group Special gfg=#799D6A
+group Delimiter gfg=#668799
+
+group String gfg=#99ad6a
+group StringDelimiter gfg=#556633
+
+group Type gfg=#FFb964
+group NonText gfg=#606060
+
+" group Statement gfg=#8197BF
+group Statement gfg=#92A5E0
+group Identifier gfg=#C6B6EE cterm=NONE
+group Structure gfg=#8FBFDC
+group PreProc gfg=#AFD7FF
+group Function gfg=#FAD07A
+
+" コメント
+group Comment gfg=#8A8A8A
+
+" Search
+group Search gfg=#F0A0C0 gbg=#302028 cterm=underline
+group IncSearch gfg=#FFDDCC gbg=#330000
+
+group Directory gfg=#DAD085
+group ErrorMsg gbg=#902020
+link Error ErrorMsg
+group Question gfg=#65C254
+
+
+" 縦分割の線
+group VertSplit gfg=#666666 gbg=#666666
+
+" Fold
+group Folded gfg=#A0A8B0 gbg=#384048 cterm=italic
+group FoldColumn gfg=#535D66 gbg=#1F1F1F
+group SignColumn gfg=#777777 gbg=#333333
+" ColorColumn
+group ColorColumn gfg=#663366 gbg=#663366
+" vim
+
+" ruby
+link rubySharpBang Comment
+group rubyClass gfg=#447799
+group rubyIdentifier gfg=#C6B6FE
+link rubyConstant Type
+link rubyFunction Function
+
+group rubyInstanceVariable gfg=#C6B6FE
+group rubySymbol gfg=#7697D6
+link rubyGlobalVariable rubyInstanceVariable
+link rubyModule rubyClass
+group rubyControl gfg=#7597C6
+
+link rubyString String
+link rubyStringDelimiter StringDelimiter
+link rubyInterpolationDelimiter Identifier
+
+group rubyRegexpDelimiter gfg=#540063
+group rubyRegexp gfg=#DD0093
+group rubyRegexpSpecial gfg=#A40073
+
+group rubyPredefinedIdentifier gfg=#DE5577
+
+" Javascript
+link javaScriptValue Constant
+link javaScriptRegexpString rubyRegexp
+
+" CoffeeScript
+link coffeeRegExp javaScriptRegexpString
+
+" Lua
+link luaOperator Conditional
+
+" C
+link cFormat Identifier
+link cOperator Constant
+
+" Objective-C/Cocoa
+link objcClass Type
+link cocoaClass objcClass
+link objcSubclass objcClass
+link objcSuperclass objcClass
+link objcDirective rubyClass
+link objcStatement Constant
+link cocoaFunction Function
+link objcMethodName Identifier
+link objcMethodArg Normal
+link objcMessageName Identifier
+
+" Vimscript
+link vimOper Normal
+link vimVar Identifier
+
+else
+endif
