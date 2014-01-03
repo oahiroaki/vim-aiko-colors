@@ -8,7 +8,15 @@ if exists('syntax_on')
   syntax reset
 endif
 
+if has('gui_running')
+" 通常テキスト
+group Normal gfg=#EEEEEE gbg=#1E1E1E
+endif
+
 if has('gui_running') || &t_Co == 256
+" 通常テキスト
+group Normal gfg=#EEEEEE
+
 " 補完ポップアップ
 group Pmenu gfg=#FFFFFF gbg=#606060
 group PmenuSel gfg=#101010 gbg=#EEEEEE
@@ -17,9 +25,6 @@ group Cursor gbg=#B0D0F0
 
 " 行番号
 group LineNr gfg=#605958
-
-" 通常テキスト
-group Normal gfg=#EEEEEE
 
 group Constant gfg=#CF6A4C
 group Special gfg=#799D6A
