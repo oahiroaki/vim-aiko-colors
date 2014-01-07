@@ -37,7 +37,7 @@ hi VertSplit guifg=#666666 guibg=#666666 ctermfg=241 ctermbg=241
 hi Folded guifg=#A0A8B0 guibg=#384048 cterm=italic ctermfg=145 ctermbg=59
 hi FoldColumn guifg=#535D66 guibg=#1F1F1F ctermfg=59 ctermbg=234
 hi SignColumn guifg=#777777 guibg=#333333 ctermfg=243 ctermbg=236
-hi ColorColumn guifg=#663366 guibg=#663366 ctermfg=59 ctermbg=59
+hi ColorColumn guifg=#333333 guibg=#333333 ctermfg=236 ctermbg=236
 hi! link rubySharpBang Comment
 hi rubyClass guifg=#447799 ctermfg=66
 hi rubyIdentifier guifg=#C6B6FE ctermfg=183

@@ -64,7 +64,7 @@ group Folded gfg=#A0A8B0 gbg=#384048 cterm=italic
 group FoldColumn gfg=#535D66 gbg=#1F1F1F
 group SignColumn gfg=#777777 gbg=#333333
 " ColorColumn
-group ColorColumn gfg=#663366 gbg=#663366
+group ColorColumn gfg=#333333 gbg=#333333
 " vim
 
 " ruby
