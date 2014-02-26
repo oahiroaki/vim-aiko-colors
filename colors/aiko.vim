@@ -51,8 +51,8 @@ hi rubyControl guifg=#7597C6 ctermfg=104
 hi! link rubyString String
 hi! link rubyStringDelimiter StringDelimiter
 hi! link rubyInterpolationDelimiter Identifier
-hi rubyRegexpDelimiter guifg=#540063 ctermfg=53
-hi rubyRegexp guifg=#DD0093 ctermfg=162
+hi rubyRegexpDelimiter guifg=#990066 ctermfg=89
+hi rubyRegexp guifg=#EE0099 ctermfg=198
 hi rubyRegexpSpecial guifg=#A40073 ctermfg=125
 hi rubyPredefinedIdentifier guifg=#DE5577 ctermfg=168
 hi! link javaScriptValue Constant
@@ -74,4 +74,6 @@ hi! link objcMessageName Identifier
 hi! link vimOper Normal
 hi! link vimVar Identifier
 else
+hi Normal guifg=#FFFFFF ctermfg=7
+hi Statement guifg=#0000FF ctermfg=4
 endif

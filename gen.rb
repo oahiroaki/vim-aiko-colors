@@ -1,4 +1,3 @@
-# coding: utf-8
 COLOR = [0x00, 0x5F, 0x87, 0xAF, 0xD7, 0xFF]
 
 GREY = [
@@ -130,6 +129,7 @@ def parse(fname)
       # remove comment
       next if line.match(/^\s*"|^\r|^\n/)
       line.gsub!(/".*/, '')
+      line.gsub!(/"^\s*"/,'')
 
       words = line.split(' ')
       cmd = words.shift
