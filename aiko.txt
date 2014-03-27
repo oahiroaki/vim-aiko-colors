@@ -1,4 +1,3 @@
-" vim: set ft=vim
 let g:colors_name = 'aiko'
 set background=dark
 
@@ -128,3 +127,5 @@ link objcMessageName Identifier
 " Vim
 link vimOper Normal
 link vimVar Identifier
+
+" vim: set ft=vim:
